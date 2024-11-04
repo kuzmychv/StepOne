@@ -7,13 +7,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2024 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
@@ -28,7 +27,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f2xx_hal.h"
+#include "stm32f4xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -60,15 +59,15 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LEDB_Pin GPIO_PIN_1
-#define LEDB_GPIO_Port GPIOB
-#define LEDG_Pin GPIO_PIN_4
-#define LEDG_GPIO_Port GPIOB
-#define LEDR_Pin GPIO_PIN_5
-#define LEDR_GPIO_Port GPIOB
-#define TAMPER_Pin GPIO_PIN_9
-#define TAMPER_GPIO_Port GPIOB
-#define TAMPER_EXTI_IRQn EXTI9_5_IRQn
+#define GPIO_FL_Pin GPIO_PIN_6
+#define GPIO_FL_GPIO_Port GPIOB
+#define GPIO_FR_Pin GPIO_PIN_7
+#define GPIO_FR_GPIO_Port GPIOB
+#define GPIO_BL_Pin GPIO_PIN_8
+#define GPIO_BL_GPIO_Port GPIOB
+#define GPIO_BR_Pin GPIO_PIN_9
+#define GPIO_BR_GPIO_Port GPIOB
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -78,5 +77,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
